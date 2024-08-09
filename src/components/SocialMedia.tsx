@@ -15,17 +15,17 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ color = "#FFF", navbar = fals
         </li>
       ) }
       <li>
-        <a href="https://iconos8.es/icons/set/whatsapp--white" target="_blank">
+        <a href="https://www.linkedin.com/in/samsdg/" target="_blank">
           <Icon variantName="linkedin" color={color} size={20} />
         </a>
       </li>
       <li>
-        <a href="https://iconos8.es/icons/set/whatsapp--white" target="_blank">
+        <a href="https://x.com/w3sams?t=ctb3dBoXZkAyeNr8-QFDWQ&s=08" target="_blank">
           <Icon variantName="twitter" color={color} size={20} />
         </a>
       </li>
       <li>
-        <a href="https://iconos8.es/icons/set/whatsapp--white" target="_blank">
+        <a href="https://wa.link/9qjbbz" target="_blank">
           <Icon variantName="whatsapp" color={color} size={20} />
         </a>
       </li>
