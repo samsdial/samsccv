@@ -5,12 +5,10 @@ const renderFeatures = () => {
   const features: JSX.Element[] = [];
   const elements = [
     {
-      icon: "pe-7s-diamond",
       title: "Years of experience",
       time: "10",
     },
     {
-      icon: "pe-7s-tools",
       title: "Project",
       time: "25",
     },
@@ -21,7 +19,6 @@ const renderFeatures = () => {
       <Col md="12" key={i}>
         <div className="p-4 bg-whites shadow-box rounded shadow-hover">
           <span className="heading-line text-primary h2">{element.time} +</span>
-          <i className={`pe ${element.icon} pe-3x mb-3 text-primary`} />
           <h5 className="bold">{element.title}</h5>
         </div>
       </Col>,
