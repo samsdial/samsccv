@@ -1,6 +1,5 @@
 import { JSX } from "react/jsx-runtime";
 import { Col, Container, Row } from "reactstrap";
-import CCV from "../../assets/CCV_sergio_andres_martínez_es-eng-2024.pdf";
 
 const renderFeatures = () => {
   const features: JSX.Element[] = [];
@@ -68,7 +67,7 @@ const PersonalInfo = () => {
             <div className="text-center text-md-left">
               <a
                 className="btn btn-primary text-contrast p-3 ml-md-auto"
-                href={CCV}
+                href="https://drive.google.com/file/d/1VoXqBrd64uZd1a1wplhb6WexXJbVS0ac/view?usp=sharing"
                 target="_blank"
               >Download CV</a>
             </div>
