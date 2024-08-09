@@ -7,13 +7,6 @@ export const ICON_VARIANTS: typeof VARIANTS = VARIANTS;
 export type LIcon = (typeof temp)[number];
 
 
-const SIZES = {
-  small: 16,
-  medium: 24,
-  large: 32,
-  xlarge: 48,
-  xxlarge: 64,
-};
 // eslint-disable-next-line react-refresh/only-export-components
 export const ICON_SIZES = {
   small: "small",
@@ -24,14 +17,14 @@ export const ICON_SIZES = {
 };
 export type IconsProps = {
   variantName: LIcon;
-  size: keyof typeof SIZES;
+  size: number;
   color?: string;
   className?: string;
 };
 
 const Icon: React.FC<IconsProps> & { VARIANTS: typeof VARIANTS } = ({
   variantName,
-  size,
+  size = 20,
   color,
   className,
 }) => {
@@ -39,9 +32,9 @@ const Icon: React.FC<IconsProps> & { VARIANTS: typeof VARIANTS } = ({
 
   return (
     <svg
-      width={SIZES[size]}
-      height={SIZES[size]}
-      viewBox="0 0 24 24"
+      width={size}
+      height={size}
+      viewBox="0 0 50 50"
       xmlns="http://www.w3.org/2000/svg/"
       className={className}
     >

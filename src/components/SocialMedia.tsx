@@ -1,4 +1,5 @@
-import IconSvg from "./IconSvg";
+// SocialMedia component
+import Icon from "./Icon";
 
 export type SocialMediaProps = {
   color?: string,
@@ -15,17 +16,17 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ color = "#FFF", navbar = fals
       ) }
       <li>
         <a href="https://iconos8.es/icons/set/whatsapp--white" target="_blank">
-          <IconSvg icon="linkedin" size="20" fill={color} />
+          <Icon variantName="linkedin" color={color} size={20} />
         </a>
       </li>
       <li>
         <a href="https://iconos8.es/icons/set/whatsapp--white" target="_blank">
-          <IconSvg icon="twitter" size="20" fill={color} />
+          <Icon variantName="twitter" color={color} size={20} />
         </a>
       </li>
       <li>
         <a href="https://iconos8.es/icons/set/whatsapp--white" target="_blank">
-          <IconSvg icon="whatsapp" size="20" fill={color} />
+          <Icon variantName="whatsapp" color={color} size={20} />
         </a>
       </li>
     </ul>
